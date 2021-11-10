@@ -1,9 +1,9 @@
-//  Particles Init
+//  Initiate Particles Library
 
 window.onload= function() {
   Particles.init ({
     selector: '.background',
-    connectParticles: true,
+    connectParticles: false,
     color: ['#DA0463', '#404B69', '#DBEDF3'],
   });
 };
