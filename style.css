@@ -1,23 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&display=swap');
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* defaults */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    color: white;
+    list-style: none;
+    text-decoration: none;
 }
+/* background animations */
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 100vw;
     min-height: 100vh;
-    font-family: 'Zen Kaku Gothic Antique', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #202124;
-    color: #9aa0a6;
+    font-family: 'Red Hat Display', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    padding: 48px;
+    text-align: center;
+    background-image: linear-gradient(to right, #00076f, #44008b );
+    background-size: 300%;
+	-moz-animation: background 30s ease-in-out infinite;
+	-webkit-animation: background 30s ease-in-out infinite;
+}
+/* navigation */
+nav {
+    
+}
+nav ul {
+
+}
+nav ul li {
+    line-height: 50px;
+    padding: 0px 12px;
+    margin: 8px 0px;
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
+    opacity: 1;
+}
+nav ul li:hover {
+    background-color: grey;
+}
+@media (max-width: 780px) {
+    body {
+        text-align: left;
+        font-size: 20px;
+    }
+}
+@keyframes background {
+    0% { 
+        background-position: 0% 50%; 
+    }
+	50% { 
+        background-position: 100% 50%; 
+    }
+	100% { 
+        background-position: 0% 50%; 
+    }
 }
 .background {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.3;
 }
